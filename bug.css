@@ -1,0 +1,10 @@
+The following CSS rule causes unexpected behavior in some browsers:
+
+```css
+div {
+  margin: 0 auto;
+  width: 50%;
+}
+```
+
+This code intends to center a div horizontally. However, the `margin: 0 auto;` only works correctly if the div has a defined width. If the width is not set or is set to a percentage, the centering might not work as expected in all browsers.  Some browsers may interpret the percentage width relative to the parent container's content width, leading to inconsistent centering.
